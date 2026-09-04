@@ -8,14 +8,14 @@ body {
   background-color:#fff;
 }
 
-a {
-  text-decoration: none;
+img {
+  width: 100%;
+  display: block;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+botto, {
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .top-wrapper {
