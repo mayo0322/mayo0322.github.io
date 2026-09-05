@@ -51,26 +51,35 @@ nav ul {
 nav li {
   font-size: 13px;
 }
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
+
+.hero {
+  height: 290px;
+  padding: 55px 65px;
+
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.twitter {
-  background-color: #55acee;
+.hero-text h2 {
+  margin: 0 0 20px;
+  font-size: 35px;
+  line-height: 1.5;
+  font-weight: normal;
 }
 
-.btn {
-  padding: 8px 24px;
+.hero-text p {
+  font-size: 13px;
+  line-height: 1.8px;
+}
+
+.hero button {
+  margin-top: 5px;
+  padding: 11px 25px;
+  border: none;
+  border-radius: 25px;
   color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
+  background-color: #9b5363;
 }
 
 .fa {
