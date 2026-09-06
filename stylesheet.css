@@ -135,8 +135,51 @@ nav li {
 }
 
 .composer {
-  
+  padding: 25px 30px;
+  background-color: #f9eeee;
+}
 
+.composer h2 {
+  margin: 0 0 25px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.composer-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.composer-card {
+  width: 230px;
+  min-height: 150px;
+  padding: 8px;
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.composer-card img {
+  width: 80px;
+  height: 145px;
+  object-fit: cover;  
+}
+
+.composer-card h3 {
+  margin: 5px 0;
+  color: #80505b;
+  font-size: 16px;
+}
+
+.composer-card p {
+  margin: 5px 0;
+  font-size: 11px;
+  line-height: 1.5px;
+}
+  
 .mood {
   padding: 30px;
   background-color: #eef6f8;
