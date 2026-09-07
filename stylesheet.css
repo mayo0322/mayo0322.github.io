@@ -95,6 +95,7 @@ nav li {
 }
 
 .card-container {
+  writing-mode: horizontal-tb;
   display: flex;
   justify-content: space-between;
   gap: 15px;
@@ -102,23 +103,38 @@ nav li {
   margin: 0 auto 30px auto;
 }
 
+.scene-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 180px;
+  max-width: 220px;
+}
+
 .card-img {
   width: 100%;
-  height: auto;
+  height: 160px;
   object-fit: cover;
-  margin: 10px 0;
+  border-radius: 4px;
+  margin: 15px 0;
 }
 
 .card-title {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
   margin: 5px 0;
 }
 
 .card-text {
-  font-size: 12px;
-  color: #666;
+  font-size: 13px;
+  color: #666666;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .composer {
