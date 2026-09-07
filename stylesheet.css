@@ -160,12 +160,19 @@ nav li {
   gap: 10px;
   background-color: white;
   border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.composer-text {
+  flex: 1px;
+  min-width: 0;
 }
 
 .composer-card img {
   width: 80px;
   height: 145px;
-  object-fit: cover;  
+  object-fit: cover; 
+  flex-shrink: 0; 
 }
 
 .composer-card h3 {
@@ -178,6 +185,14 @@ nav li {
   margin: 5px 0;
   font-size: 11px;
   line-height: 1.5px;
+}
+
+.composer-card button {
+  padding: 5px 15px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
 }
   
 .mood {
