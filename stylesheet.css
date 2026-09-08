@@ -197,36 +197,6 @@ nav li {
   background-color: white;
   cursor: pointer;
 }
-  
-.mood {
-  padding: 30px;
-  background-color: #eef6f8;
-}
-
-.mood h2 {
-  margin: 0 0 25px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: normal;
-}
-.mood-list{
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.mood-card {
-  width: 230px;
-  height: 170px;
-  padding: 25px 15px;
-  text-align: center;
-  color: white;
-  border-radius: 5px;
-
-  background-size: cover;
-  background-position: center;
-}
-
 
 .last-message {
   min-height: 120px;
