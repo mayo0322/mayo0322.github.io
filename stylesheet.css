@@ -71,12 +71,12 @@ nav li {
 }
 
 .hero-image {
-  width: 180px;
+  width: 360px;
   height: 180px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  /* 四角形に戻す */
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+  mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 .hero-text h2 {
