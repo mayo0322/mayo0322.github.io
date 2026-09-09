@@ -30,6 +30,7 @@ header {
 
 .logo h1 {
   margin: 0;
+  padding-top: 50px;
   font-size: 18px;
   letter-spacing: 2px;
   }
@@ -67,12 +68,13 @@ nav li {
 }
 
 .hero-text {
-  flex: 1;
+  flex: 0 0 420px;
 }
 
 .hero-image {
-  width: 360px;
-  height: 180px;
+  width: 920px;
+  height: 500px;
+  flex-shrink: 0;
   object-fit: cover;
   /* 四角形に戻す */
   -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
@@ -81,7 +83,7 @@ nav li {
 
 .hero-text h2 {
   margin: 0 0 20px;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.5;
   font-weight: normal;
 }
@@ -117,7 +119,7 @@ nav li {
 }
 
 .btn {
-  padding: 5px 15px;
+  padding: 3px 10px;
   color: #333;
   display: inline-block;
   border: 1px solid #aaa;
@@ -200,6 +202,7 @@ nav li {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .composer-card {
@@ -222,6 +225,9 @@ nav li {
 
 .composer-text .btn {
   margin-top: auto;
+  padding: 2px 8px;
+  font-size: 11px;
+  width: fit-content;
 }
 
 .composer-card img {
