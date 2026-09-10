@@ -283,10 +283,27 @@ nav li {
 .journey-card {
   width: 220px;
   padding: 12px;
-  border-radius: 16px;
-  background: #fffaf8;
+  border-radius: 0;
+  background: transparent;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: none;
+}
+
+.journey {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.journey h2 {
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0 0 25px;
+}
+
+.journey-card h3 {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 8px;
 }
 
 .journey-img {
@@ -302,10 +319,35 @@ nav li {
 .last-message {
   min-height: 160px;
   padding: 80px 60px 25px;
-  margin-top: 80px;
+  margin-top: 120px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+}
+
+.last-message h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.last-message p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.last-message button {
+  margin-top: 10px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: #9b5363;
+  cursor: pointer;
 }
 
 footer img {
