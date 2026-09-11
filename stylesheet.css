@@ -30,6 +30,7 @@ header {
 
 .logo h1 {
   margin: 0;
+  padding-top: 50px;
   font-size: 18px;
   letter-spacing: 2px;
   }
@@ -53,141 +54,300 @@ nav li {
 }
 
 .hero {
-  height: 290px;
+  min-height: 290px;
   padding: 55px 65px;
-
-  background-image: url("hero.jpg");
+  background-image: url("orchestra.jpg");
   background-size: cover;
   background-position: center;
 }
 
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 0 0 420px;
+}
+
+.hero-image {
+  width: 920px;
+  height: 500px;
+  flex-shrink: 0;
+  object-fit: cover;
+  /* 四角形に戻す */
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+  mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
 .hero-text h2 {
   margin: 0 0 20px;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.5;
   font-weight: normal;
 }
 
 .hero-text p {
   font-size: 13px;
-  line-height: 1.8px;
+  line-height: 1.8;
 }
 
 .hero button {
   margin-top: 5px;
-  padding: 11px 25pheight 65px;
+  padding: 11px 25px;
   border: none;
   border-radius: 25px;
   color: white;
   background-color: #9b5363;
 }
 
-.everyday {
-  padding: 25px 30px 35px;
+.section-title{
   text-align: center;
-  background-color: #faf7f3;
 }
 
-.everyday h2 {
-  
+.scene-section {
+  background-color: #fffaf5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 3px 10px;
+  color: #333;
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-container {
+  writing-mode: horizontal-tb;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+.scene-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+.card-img {
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin: 5px 0;
+}
+
+.card-text {
+  font-size: 13px;
+  color: #666666;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.more-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.more-button a {
+  display: inline-block;
+  padding: 8px 24px;
+  color: white;
+  background-color: #9b5363;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.composer {
+  padding: 25px 30px;
+  background-color: #f9eeee;
+}
+
+.composer h2 {
   margin: 0 0 25px;
+  text-align: center;
   font-size: 25px;
   font-weight: normal;
 }
 
-.scene-list {
+.composer-list {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
-.scene-card {
-  width: 180px;
-  padding: 10px;
-  border-radius: 5px;
+.composer-card {
+  width: 330px;
+  min-height: 170px;
+  padding: 8px;
+  display: flex;
+  gap: 10px;
   background-color: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.scene-card h3 {
-  margin: 0 0 8px;
-  font-size: 15px;
-}
-
-.scene-card img {
-  height: 90px;
-  object-fit: cover;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
-.scene-card p {
-  margin: 10px 0 5px;
+.composer-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.composer-text .btn {
+  margin-top: auto;
+  padding: 2px 8px;
   font-size: 11px;
-  line-height: 1.6px;
+  width: fit-content;
 }
 
-.everyday > button {
-  margin-top: 10px;
-  padding: 7px 35px;
+.composer-card img {
+  width: 80px;
+  height: 145px;
+  object-fit: cover; 
+  flex-shrink: 0; 
+}
+
+.composer-card h3 {
+  margin: 5px 0;
+  color: #80505b;
+  font-size: 16px;
+}
+
+.composer-card p {
+  margin: 5px 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.journey-card{
+  width: 220px;
+  height:120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+}
+
+.journey-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.composer-card button {
+  padding: 5px 15px;
   border: 1px solid #aaa;
   border-radius: 20px;
   background-color: white;
+  cursor: pointer;
 }
 
-.composer {
-  
-
-.mood {
-  padding: 30px;
-  background-color: #eef6f8;
-}
-
-.mood h2 {
-  margin: 0 0 25px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: normal;
-}
-.mood-list{
+.journey-list {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
 }
 
-.mood-card {
-  width: 230px;
-  height: 170px;
-  padding: 25px 15px;
+.journey-card {
+  width: 220px;
+  padding: 12px;
+  border-radius: 0;
+  background: transparent;
   text-align: center;
-  color: white;
-  border-radius: 5px;
-
-  background-size: cover;
-  background-position: center;
+  box-shadow: none;
 }
 
+.journey {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.journey h2 {
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0 0 25px;
+}
+
+.journey-card h3 {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 8px;
+}
+
+.journey-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #caa98b;
+  display: block;
+  margin:0 auto 12px;
+}
 
 .last-message {
-  min-height: 120px;
-  padding: 25px 60px;
+  min-height: 160px;
+  padding: 200px 60px 25px;
+  margin-top: 120px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-
-  background-image: url()
+  justify-content: center;
+  gap: 10px;
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
+.last-message h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.last-message p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.last-message button {
+  margin-top: 20px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: #9b5363;
   cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
 }
 
 footer img {
@@ -204,23 +364,6 @@ footer {
   padding-bottom: 20px;
 }
 
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
 .clear {
   clear: left;
 }
-
-
-
-  footer {
-    padding: 20px;
-    text-align: center;
-    font-size: 11px;
-    background-color: #f5f5f5;
-  }
