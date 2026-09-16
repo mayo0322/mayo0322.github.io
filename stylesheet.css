@@ -249,22 +249,6 @@ nav li {
   line-height: 1.5;
 }
 
-.journey-card{
-  width: 220px;
-  height:120px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 10px;
-  border-radius: 50%;
-}
-
-.journey-list {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
 .composer-card button {
   padding: 5px 15px;
   border: 1px solid #aaa;
@@ -273,47 +257,61 @@ nav li {
   cursor: pointer;
 }
 
-.journey-list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.journey-card {
-  width: 220px;
-  padding: 12px;
-  border-radius: 0;
-  background: transparent;
-  text-align: center;
-  box-shadow: none;
-}
-
 .journey {
-  text-align: center;
-  padding-top: 30px;
+  position: relative;
+  padding: 70px 65px;
+  background: linear-gradient(
+    rgba(255, 248, 243,0.45),
+    rgba(255,248,243,0.45)
+  );
 }
 
-.journey h2 {
-  font-size: 25px;
-  font-weight: normal;
-  margin: 0 0 25px;
+.journey-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.journey-card h3 {
+.journey-heading {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+}
+
+.section-label{
+  margin: 0 0 12px;
   font-size: 12px;
-  font-weight: normal;
-  margin: 0 0 8px;
+  letter-spacing: 3px;
+  color: #8f5b62;
 }
 
-.journey-img {
-  width: 180px;
-  height: 180px;
+.journey-heading h2 {
+  margin: 0 0 18px;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.4;
+  font-weight: normal;
+  color: #2f2523;
+}
+
+.journey-introduction{
+  margin: 0;
+  font-size: 15px;
+  line-size: 1.9;
+  color: #4b3b39;
+}
+
+.journey-visual {
+  flex: 1;
+  max-width: 520px;
+  height: 360px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #caa98b;
+  border-radius: 18px;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.12)
   display: block;
-  margin:0 auto 12px;
 }
 
 .last-message {
