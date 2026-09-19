@@ -6,7 +6,8 @@ body {
   margin: 0;
   color: #333;
   font-family: "Yu Mincho","Hiragino Mincho ProN",serif;
-  background-color:#fff;
+  background-color: #fff;
+  line-height: 1.6;
 }
 
 img {
@@ -20,25 +21,32 @@ bottom {
 }
 
 header {
-  height: 70px;
-  padding: 0 60px;
+  min-height: 70px;
+  padding: 20px 60px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .logo h1 {
   margin: 0;
-  padding-top: 50px;
+  padding-top: 0;
   font-size: 18px;
   letter-spacing: 2px;
-  }
+  line-height: 1.2;
+}
 
-
-.logp p {
-  margin: 3px 0 0;
+.logo p {
+  margin: 4px 0 0;
   font-size: 10px;
+  line-height: 1.5;
 }
 
 nav ul {
@@ -56,7 +64,7 @@ nav li {
 .hero {
   min-height: 290px;
   padding: 55px 65px;
-  background-image: url("orchestra.jpg");
+  background-image: url("image/orchestra.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -76,9 +84,22 @@ nav li {
   height: 500px;
   flex-shrink: 0;
   object-fit: cover;
-  /* 四角形に戻す */
-  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
-  mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.15) 18%,
+    rgba(0,0,0,0.7) 35%,
+    rgba(0,0,0,1) 65%,
+    rgba(0,0,0,1) 100%
+  );
+  mask-image: linear-gradient(
+    to left,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.15) 18%,
+    rgba(0,0,0,0.7) 35%,
+    rgba(0,0,0,1) 65%,
+    rgba(0,0,0,1) 100%
+  );
 }
 
 .hero-text h2 {
@@ -89,12 +110,14 @@ nav li {
 }
 
 .hero-text p {
+  margin: 0;
   font-size: 13px;
   line-height: 1.8;
 }
 
 .hero button {
-  margin-top: 5px;
+  display: inline-block;
+  margin-top: 18px;
   padding: 11px 25px;
   border: none;
   border-radius: 25px;
@@ -258,62 +281,201 @@ nav li {
 }
 
 .journey {
-  position: relative;
-  padding: 70px 65px;
-  background: linear-gradient(
-    rgba(255, 248, 243,0.45),
-    rgba(255,248,243,0.45)
-  );
+  padding: 80px 60px 40px;
+  background-color: #f5efe9;
 }
 
-.journey-content {
+.journey-inner {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .journey-heading {
-  flex: 1;
-  position: relative;
-  z-index: 1;
-  max-width: 520px;
+  flex: 0 0 360px;
 }
 
-.section-label{
-  margin: 0 0 12px;
+.section-label {
+  margin: 0 0 16px;
   font-size: 12px;
-  letter-spacing: 3px;
-  color: #8f5b62;
+  letter-spacing: 0.25em;
+  color: #8b6e74;
 }
 
 .journey-heading h2 {
   margin: 0 0 18px;
-  font-size: clamp(28px, 3vw, 42px);
+  font-size: 38px;
   line-height: 1.4;
   font-weight: normal;
-  color: #2f2523;
+  color: #2b2b2b;
 }
 
-.journey-introduction{
+.journey-introduction {
   margin: 0;
   font-size: 15px;
-  line-size: 1.9;
-  color: #4b3b39;
+  line-height: 1.9;
+  color: #5d5d5d;
 }
 
 .journey-visual {
   flex: 1;
-  max-width: 520px;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 18px;
-  box-shadow: 0 16px 30px rgba(0,0,0,0.12)
-  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(80, 62, 67, 0.15);
 }
 
+.journey-visual img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.08) 12%,
+    rgba(0, 0, 0, 0.5) 22%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.08) 12%,
+    rgba(0, 0, 0, 0.5) 22%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.all-cities {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 24px auto 0;
+  padding: 8px 18px;
+  color: #3e3536;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(62, 53, 54, 0.4);
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Serif JP','Georgia', 'Times New Roman', serif;
+  color: #333333;
+  line-height: 1.6px;
+  background-color: #f7f5f0;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.sub-title {
+  font-size: 1.15rem;
+  letter-spacing: 0.25em;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.sub-title::before,
+.sub-title::after{
+  content:'';
+  flex-grow: 1;
+  height: 1px;
+  background-color: #a0a0a0;
+}
+.sub-title::before{ margin-right: 15px; max-width: 40px;}
+.sub-titlr::after{ margin-left: 15px; max-width: 40px;}
+
+.main-title {
+  font-size: 2.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  color: #555555;
+  margin-bottom: 40px;
+  line-height: 1.8px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #513e43;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  padding: 14px 45px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(81, 62, 67,0.2);
+  transition: all 0.3s ease;
+}
+
+.cta-button .arrow {
+  margin-left: 15px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #634d53;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(81, 62, 67,0.3);
+}
+
+.cta-button:hover .arrow {
+  transform: translateX(5px);
+}
+
+.hero-side-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15)
+  letter-spacing: 0.05em;
+}
 .last-message {
   min-height: 160px;
   padding: 200px 60px 25px;
