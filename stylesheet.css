@@ -62,14 +62,33 @@ nav li {
 }
 
 .hero {
-  min-height: 290px;
+  position: relative;
+  min-height: 620px;
   padding: 55px 65px;
   background-image: url("image/orchestra.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.78) 16%,
+    rgba(255, 255, 255, 0.4) 30%,
+    rgba(255, 255, 255, 0.08) 48%,
+    rgba(255, 255, 255, 0) 62%
+  );
+  z-index: 0;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -77,29 +96,11 @@ nav li {
 
 .hero-text {
   flex: 0 0 420px;
+  max-width: 420px;
 }
 
 .hero-image {
-  width: 920px;
-  height: 500px;
-  flex-shrink: 0;
-  object-fit: cover;
-  -webkit-mask-image: linear-gradient(
-    to left,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.15) 18%,
-    rgba(0,0,0,0.7) 35%,
-    rgba(0,0,0,1) 65%,
-    rgba(0,0,0,1) 100%
-  );
-  mask-image: linear-gradient(
-    to left,
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0.15) 18%,
-    rgba(0,0,0,0.7) 35%,
-    rgba(0,0,0,1) 65%,
-    rgba(0,0,0,1) 100%
-  );
+  display: none;
 }
 
 .hero-text h2 {
