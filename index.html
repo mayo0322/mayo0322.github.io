@@ -20,7 +20,7 @@
       <li>ホーム</li>
       <li>実は身近なクラシック</li>
       <li>作曲家の物語</li>
-      <li>作曲家の旅</li>
+      <li>作曲家との旅</li>
       <li>はじめての方へ</li>
     </ul>
   </nav>
@@ -32,7 +32,9 @@
       <div class="hero-text">
         <h2>クラシック音楽は、<br>遠い世界の音楽じゃない。</h2>
         <p>あなたの毎日に、そっと寄り添っているクラシック音楽。<br>知らないうちに、出会っているかもしれません。</p>
-        <button>クラシック音楽の世界へ旅に出る</button>
+        <button>クラシック音楽の世界へ旅に出る
+          <span>→</span>
+        </button>
       </div>
     </div>
   </section>
@@ -42,36 +44,46 @@
   <h2 class="section-title">実は、こんな場面で聴いています</h2>
   <div class="card-container">
     <div class="scene-card">
-      <div class="card-icon">🎬</div>
-      <h3 class="card-title">映画で</h3>
+      <div class="card-header">
+        <div class="card-icon">🎬</div>
+        <h3 class="card-title">映画で</h3>
+      </div>
       <img src="image/movie.jpg" alt="映画の画像" class="card-img">
       <p class="card-text">「2001年宇宙の旅」など数多くの名場面を彩ります。</p>
     </div>
 
     <div class="scene-card">
-      <div class="card-icon">📺</div>
-      <h3 class="card-title">CMで</h3>
+      <div class="card-header">
+        <div class="card-icon">📺</div>
+        <h3 class="card-title">CMで</h3>
+      </div>
       <img src="image/cm.jpg" alt="CMの画像" class="card-img">
       <p class="card-text">有名なクラシック音楽はCMでよく使われています。</p>
     </div>
 
     <div class="scene-card">
-      <div class="card-icon">🏃</div>
-      <h3 class="card-title">スポーツで</h3>
+      <div class="card-header">
+        <div class="card-icon">🏃</div>
+        <h3 class="card-title">スポーツで</h3>
+      </div>
       <img src="image/sports.jpg" alt="スポーツの画像" class="card-img">
       <p class="card-text">試合や入場シーンを盛り上げてくれます。</p>
     </div>
 
     <div class="scene-card">
-      <div class="card-icon">💍</div>
-      <h3 class="card-title">結婚式で</h3>
+      <div class="card-header">
+        <div class="card-icon">💍</div>
+        <h3 class="card-title">結婚式で</h3>
+      </div>
       <img src="image/wedding.jpg" alt="結婚式の画像" class="card-img">
       <p class="card-text">結婚式の定番曲にもクラシック音楽はたくさん。</p>
     </div>
 
     <div class="scene-card">
-      <div class="card-icon">🎮</div>
-      <h3 class="card-title">ゲーム・アニメで</h3>
+      <div class="card-header">
+        <div class="card-icon">🎮</div>
+        <h3 class="card-title">ゲーム・アニメで</h3>
+      </div>
       <img src="image/game.jpg" alt="ゲームの画像" class="card-img">
       <p class="card-text">ゲームやアニメのBGMにもクラシック音楽が使われています。</p>
     </div>
@@ -177,6 +189,10 @@
         音楽を生み出した街へ。<br>
         地図をたどりながら旅してみましょう。
       </p>
+      <a href="#" class="all-cities">
+        旅をはじめる
+        <span>→</span>
+      </a>
     </div>
 
     <div class="journey-visual">
@@ -184,10 +200,6 @@
     </div>
   </div>
 
-  <a href="#" class="all-cities">
-    すべての都市を見る
-    <span>→</span>
-  </a>
 </section>
 
 <section class="destination-cards">
@@ -250,12 +262,14 @@
   <div class="travel-card">
     <div class="travel-image">
       <img src="image/salzburg.jpg" alt="ザルツブルクの街並み">
-      <p class="city-en">SALZBURG</p>
-      <h3>ザルツブルク</h3>
-      <p class="travel-description">耳が聞こえなくなっても、音楽を書き続けた街。</p>
-      <a href="#" class="btn">詳しく見る
-        <span>→</span>
-      </a>
+      <div class="travel-content">
+        <p class="city-en">SALZBURG</p>
+        <h3>ザルツブルク</h3>
+        <p class="travel-description">ベートーヴェンが耳が聞こえなくなっても、音楽を書き続けた街。</p>
+        <a href="#" class="btn">詳しく見る
+          <span>→</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
