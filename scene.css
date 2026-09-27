@@ -1,0 +1,318 @@
+:root {
+  --bg: #f7f3ee;
+  --panel: #fffdfb;
+  --text: #1f1b1a;
+  --muted: #5a514d;
+  --accent: #a76f4d;
+  --accent-soft: #f1e2d7;
+  --line: #e7dfd8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.scene-page {
+  margin: 0;
+  font-family: "Yu Mincho","Hiragino Mincho ProN",serif;
+  background: linear-gradient(180deg, #f9f6f2 0%, #f3efe9 100%);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.scene-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.scene-header-inner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  white-space: nowrap;
+  margin-left: 0;
+  flex: 0 0 auto;
+}
+
+.scene-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px 12px;
+  margin-left: auto;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  font-family: "Yu Mincho","Hiragino Mincho ProN",serif;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-align: left;
+  font-family: "Yu Mincho","Hiragino Mincho ProN",serif;
+}
+
+.scene-logo {
+  color: var(--text);
+  text-decoration: none;
+  font-family: "Yu Mincho","Hiragino Mincho ProN",serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.scene-logo span {
+  display: inline;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  color: var(--text);
+}
+
+.scene-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.scene-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.scene-nav a:hover,
+.scene-nav a.active {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.scene-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.scene-hero {
+  text-align: center;
+  padding: 40px 0 28px;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+.scene-hero h1 {
+  margin: 0 0 36px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.2;
+}
+
+.lead {
+  max-width: 780px;
+  margin: 0 auto 14px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.scene-hero .lead:last-of-type {
+  margin-bottom: 0;
+}
+
+.scene-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 500px;
+  align-items: center;
+  gap: 42px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 32px;
+  margin-top: 28px;
+  box-shadow: 0 12px 28px rgba(68, 50, 38, 0.04);
+}
+
+.scene-detail.reverse {
+  grid-template-columns: 500px minmax(0, 1fr);
+}
+
+.scene-detail.reverse .scene-copy {
+  order: 2;
+}
+
+.scene-detail.reverse .scene-image {
+  order: 1;
+}
+
+.scene-copy {
+  order: 1;
+}
+
+.scene-tag {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.scene-copy h2 {
+  margin: 18px 0 14px;
+  font-size: clamp(1.35rem, 2.4vw, 2.1rem);
+  line-height: 1.35;
+}
+
+.scene-copy p,
+.scene-copy li {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.scene-copy ul {
+  margin: 18px 0 0;
+  padding-left: 1.2rem;
+}
+
+.scene-image {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 22px;
+  box-shadow: 0 18px 28px rgba(69, 53, 40, 0.08);
+  display: block;
+  justify-self: center;
+}
+
+#cm .scene-image,
+#movie .scene-image,
+#sports .scene-image,
+#anime .scene-image,
+#daily .scene-image {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+}
+
+#cm .scene-copy,
+#anime .scene-copy {
+  order: 2;
+}
+
+#cm .scene-image,
+#anime .scene-image {
+  order: 1;
+}
+
+.scene-more {
+  margin-top: 48px;
+  padding: 32px 24px;
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+}
+
+.scene-more h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+.scene-more p {
+  margin: 0 0 22px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--text);
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateY(-1px);
+  background: var(--accent);
+}
+
+@media (max-width: 800px) {
+  .scene-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .scene-nav {
+    justify-content: flex-start;
+  }
+
+  .scene-detail,
+  .scene-detail.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .scene-detail.reverse .scene-copy,
+  .scene-detail.reverse .scene-image {
+    order: initial;
+  }
+
+  .scene-image {
+    height: 280px;
+  }
+}
