@@ -171,13 +171,10 @@ img {
   grid-template-columns: minmax(0, 1fr) 500px;
   align-items: center;
   gap: 42px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  padding: 32px;
-  margin-top: 28px;
-  box-shadow: 0 12px 28px rgba(68, 50, 38, 0.04);
-}
+  margin-bottom: 40px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 30px;
 
 .scene-detail.reverse {
   grid-template-columns: 500px minmax(0, 1fr);
@@ -224,27 +221,24 @@ img {
   padding-left: 1.2rem;
 }
 
-.scene-image {
+.scene-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  min-height: 220px;
+}
+
+.scene-card img {
   width: 100%;
-  max-width: 500px;
-  aspect-ratio: 3 / 2;
-  height: auto;
+  height: 220px;
   object-fit: cover;
-  object-position: center;
-  border-radius: 22px;
-  box-shadow: 0 18px 28px rgba(69, 53, 40, 0.08);
-  display: block;
-  justify-self: center;
+  border-radius: 12px;
+  flex-shrink: block;
 }
 
-#cm .scene-copy,
-#anime .scene-copy {
-  order: 2;
-}
-
-#cm .scene-image,
-#anime .scene-image {
-  order: 1;
+.scene-text {
+  flex: 1;
 }
 
 .scene-more {
