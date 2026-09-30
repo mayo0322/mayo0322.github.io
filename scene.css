@@ -135,7 +135,7 @@ img {
 }
 
 .scene-main {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 48px 24px 80px;
 }
@@ -175,13 +175,22 @@ img {
 
 .scene-detail {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 500px;
+  grid-template-columns: minmax(0, 530px) minmax(0, 530px);
   align-items: center;
   gap: 42px;
   margin-bottom: 40px;
   padding: 40px;
+  min-height: 469px;
   background: #ffffff;
   border-radius: 30px;
+}
+
+#wedding {
+  min-height: 530px;
+}
+
+#anime {
+  min-height: 499px;
 }
 
 .scene-detail.reverse {
@@ -271,6 +280,7 @@ img {
 
 .scene-image {
   width: 100%;
+  max-width: 530px;
   height: 300px;
   object-fit: cover;
   border-radius: 12px;
