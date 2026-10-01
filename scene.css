@@ -207,6 +207,7 @@ img {
 
 .scene-copy {
   order: 1;
+  width: calc(100% + 160px);
 }
 
 .scene-tag {
@@ -255,7 +256,7 @@ img {
 }
 
 .scene-text {
-  flex: 1;
+  flex: auto;
 }
 
 .scene-more {

@@ -571,6 +571,7 @@ body {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.15)
   letter-spacing: 0.05em;
 }
+
 .last-message {
   min-height: 160px;
   padding: 120px 60px 25px;
