@@ -1,0 +1,54 @@
+* {
+    box-sizing:border-box
+}
+
+body {
+    margin: 0;
+    background-color: #f7f3eb;
+    color: #263451;
+    font-family: "yu mincho", "Hiragino Mincho ProN", serif;
+    line-height: 1.8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #fffdf8;
+}
+
+.logo {
+    color: #1d2b4f;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navigation {
+    display: flex;
+    gap: 28px;
+}
+
+.navigation a {
+    color: #263451;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navigation a:hover {
+    color: #b49a6c;
+}
+
+.hero {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    color: white;
+
+    background-color: linear-gradient(90deg, rgba(20,32,57,0.95),rgba(20,32,57,0.45)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+}
